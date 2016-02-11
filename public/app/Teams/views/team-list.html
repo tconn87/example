@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-10 col-md-offset-1">
+      <h1>Teams</h1>
+  <div class="table-container" >
+    <nav class="table-top-bar">
+  	<a class="btn btn-success btn-lg add-resource-modal-btn" ng-href="/#/teams/add"><span class="glyphicon glyphicon-plus"></span>Create Team</a>
+  	</nav>
+    <table id="resources" class="table table-striped table-responsive">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+        <tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="team in teams">
+          <td><button  class="btn btn-danger btn-sm"  ng-click="open('lg',team,$index)"><b>-</b></button></td>
+          <td><button class="btn btn-primary btn-sm" ng-click="editTeam(team)"><b>Edit</b></button></td>
+          <td>{{team.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Delete Competition</h3>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete this resource?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" ng-click="cancel()">Close</button>
+          <button id="done-btn" type="button"  class="btn btn-danger" ng-click="ok()" ng-disabled="updating" >{{updating ? 'Deleting...' : 'Delete'}}</button>
+        </div>
+    </script>
+  </div>
+ </div>
+</div>

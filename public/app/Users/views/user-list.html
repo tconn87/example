@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-10 col-md-offset-1">
+     <div class="row-fluid">
+       <div class="span3">
+         <a class="btn btn-info btn-sm pull-right" href="#/users/manage" role="button">Manage</a>
+         <h1>Users</h1>
+       </div>
+     </div>
+     <div class="list-group">
+       <div class="list-group-item" ng-repeat="user in users">
+         <h4 class="list-group-item-heading">{{user.name}}</h4>
+         <div class="row-fluid list-group-item-text">
+           <div class="pull-right visible-lg visible-md visible-sm"><strong>Location: </strong>{{user.location}}</div>
+           <strong>Email: </strong>{{user.email}}</br>
+           <div class="visible-xs"><strong>Location: </strong>{{user.location}}</div>
+           <strong>Skills: </strong>{{user.specialty}}
+         </div>
+       </div>
+     </div>
+   </div><!-- End of column-->
+  </div><!-- End of row-->
+</div><!-- End of container-->

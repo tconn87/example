@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <title>Bench Competition App</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/Common/modal/modal.js"></script>
+    <script src="app/Welcome/services/welcome.js"></script>
+    <script src="app/Welcome/controllers/welcome.js"></script>
+    <script src="app/Users/services/user.js"></script>
+    <script src="app/Users/controllers/user.js"></script>
+    <script src="app/Competitions/services/competitions.js"></script>
+    <script src="app/Competitions/controllers/comp-add.js"></script>
+    <script src="app/Competitions/controllers/edit-comp.js"></script>
+    <script src="app/Competitions/controllers/comp-list.js"></script>
+    <script src="app/Teams/services/teams.js"></script>
+    <script src="app/Teams/controllers/team-add.js"></script>
+    <script src="app/Teams/controllers/edit-team.js"></script>
+    <script src="app/Teams/controllers/team-list.js"></script>
+
+  </head>
+  <body>
+    <ng-include src="'app/Layout/views/header.tpl.html'"></ng-include>
+      <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
+      <main>
+    <ng-include src="'app/Layout/views/footer.tpl.html'"></ng-include>
+      </main>
+  </body>
+</html>

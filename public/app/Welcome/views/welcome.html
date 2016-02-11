@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="jumbotron">
+      <h2 class="text-center">RSI Bench Competition App</h2>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row col-md-10 col-md-offset-1">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Competitions</div>
+        <!-- <div class="panel-body"> -->
+          <!-- <div class="list-group"> -->
+            <li type="button" class="list-group-item" ng-repeat="competition in competitions" ng-click="selectCompetition($index)" ng-class="{'selected':$index == selectedComp}">{{competition.name}}</li>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Teams</div>
+        <!-- <div class="panel-body"> -->
+          <!-- <div class="list-group"> -->
+            <li type="button" class="list-group-item" ng-repeat="team in teams" ng-click="selectTeam($index)" ng-class="{'selected':$index == selectedTeam}">{{team.name}}</li>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Members</div>
+        <!-- <div class="panel-body"> -->
+          <!-- <div class="list-group"> -->
+            <li type="button" class="list-group-item" ng-repeat="user in users | limitTo: 5">{{user.name}}</li>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div> -->

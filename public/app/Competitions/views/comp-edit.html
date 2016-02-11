@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-10 col-md-offset-1">
+      <h1>{{header}}</h1>
+      <div class="table-container" >
+        <form id="compForm">
+          <div class="form-group">
+            <label for="comp-name">Name</label>
+            <input type="text" class="form-control" id="comp-name" ng-model="comp.name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" ng-model="comp.description" placeholder="Description">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">Objective</label>
+            <input type="text" id="objective" class="form-control"  ng-model="comp.objective" placeholder="Objective">
+          </div>
+          <button type="submit" class="btn btn-default" ng-click="updateComp(comp)" ng-disabled="updating" >{{updating ? 'Saving...' : 'Save'}}</button>
+        </form>
+  </div><!-- End of table container-->
+ </div><!-- End of column-->
+</div><!-- End of row-->
+</div><!-- End of container-->
