@@ -1,2 +1,0 @@
-# example
-Responsive Design
